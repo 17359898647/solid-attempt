@@ -1,0 +1,30 @@
+{
+  "name": "solid",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "up": "taze major -I"
+  },
+  "dependencies": {
+    "@antfu/eslint-config": "^2.6.3",
+    "@unocss/eslint-plugin": "^0.58.4",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "solid-js": "^1.8.7",
+    "taze": "^0.13.1",
+    "unocss": "^0.58.4",
+    "unocss-preset-extra": "^0.5.3",
+    "vitest": "^1.2.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vite-plugin-solid": "^2.8.0"
+  }
+}
