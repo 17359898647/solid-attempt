@@ -39,4 +39,10 @@ export default eslint({
       }],
     },
   },
+  vue: false,
+  jsx: true,
+}, {
+  rules: {
+    'no-console': 0,
+  },
 })
