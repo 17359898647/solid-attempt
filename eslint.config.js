@@ -37,6 +37,7 @@ export default eslint({
       'react/no-unknown-property': [2, {
         ignore: ['class'],
       }],
+      'react/prop-types': 0,
     },
   },
   vue: false,

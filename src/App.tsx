@@ -1,11 +1,15 @@
+import { createSignal } from 'solid-js'
+import { InternalCalendar } from '@/component/DatePick'
+
 function App() {
+  const [date, setDate] = createSignal(new Date())
   return (
     <div class="size-full flex-center">
       <div class="flex gap-4">
-        <button class="btn btn-outline">Default</button>
-        <button class="btn btn-outline btn-primary">Primary</button>
-        <button class="btn btn-outline btn-secondary">Secondary</button>
-        <button class="btn btn-outline btn-accent">Accent</button>
+        <InternalCalendar
+          value={date()}
+          onChange={setDate}
+        />
       </div>
     </div>
   )

@@ -8,4 +8,9 @@ export default defineConfig({
   plugins: [solid(), UnoCSS({
     presets: [presetUno(), presetDaisy()],
   })],
+  resolve: {
+    alias: {
+      '@': '/src',
+    },
+  },
 })
