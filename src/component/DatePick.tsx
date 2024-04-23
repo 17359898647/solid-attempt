@@ -58,9 +58,11 @@ export function InternalCalendar(propsValue: CalendarProps) {
     const firstDay = firstDayOfMonth(date().getFullYear(), date().getMonth())
     for (let i = 0; i < firstDay; i++) {
       const day = daysOfMonth(date().getFullYear(), date().getMonth() - 1) - firstDay + i + 1
-      days.push(<div class="empty text-gray-100">
-        {replenishZero(day)}
-                </div>)
+      days.push(
+        <div class="empty text-gray-100">
+          {replenishZero(day)}
+        </div>,
+      )
     }
 
     for (let i = 1; i <= daysCount; i++) {
@@ -70,26 +72,32 @@ export function InternalCalendar(propsValue: CalendarProps) {
         setDate(value)
       }
       if (i === date().getDate()) {
-        days.push(<div
-          class="day selected"
-          onClick={clickEvent}
-                  >
-          {replenishZero(i)}
-        </div>)
+        days.push(
+          <div
+            class="day selected"
+            onClick={clickEvent}
+          >
+            {replenishZero(i)}
+          </div>,
+        )
       }
       else {
-        days.push(<div
-          class="day"
-          onClick={clickEvent}
-                  >
-          {replenishZero(i)}
-        </div>)
+        days.push(
+          <div
+            class="day"
+            onClick={clickEvent}
+          >
+            {replenishZero(i)}
+          </div>,
+        )
       }
     }
     for (let i = 0; i < 6 - lastDay; i++) {
-      days.push(<div class="empty text-gray-100">
-        {replenishZero(i + 1)}
-                </div>)
+      days.push(
+        <div class="empty text-gray-100">
+          {replenishZero(i + 1)}
+        </div>,
+      )
     }
     return days
   })
