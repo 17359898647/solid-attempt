@@ -1,22 +1,17 @@
 import eslint from '@antfu/eslint-config'
 
 export default eslint({
+  unocss: true,
+  jsx: true,
+  isInEditor: true,
+  solid: true,
   ignores: [
     'node_modules',
     'src/types/*',
   ],
-  react: {
+  stylistic: {
     overrides: {
-      'react/jsx-boolean-value': [2, 'always'],
-      'react/jsx-indent': [2, 2],
-      'react/jsx-max-props-per-line': [2, {
-        maximum: 1,
-        when: 'always',
-      }],
-      'react/jsx-one-expression-per-line': [2, {
-        allow: 'literal',
-      }],
-      'react/jsx-sort-props': [2, {
+      'style/jsx-sort-props': [2, {
         callbacksLast: true,
         ignoreCase: false,
         multiline: 'last',
@@ -25,7 +20,13 @@ export default eslint({
         shorthandFirst: true,
         shorthandLast: false,
       }],
-      'react/jsx-wrap-multilines': [2, {
+      'style/jsx-max-props-per-line': [2, {
+        maximum: {
+          multi: 1,
+          single: 1,
+        },
+      }],
+      'style/jsx-wrap-multilines': [2, {
         arrow: 'parens-new-line',
         assignment: 'parens-new-line',
         condition: 'parens-new-line',
@@ -34,16 +35,10 @@ export default eslint({
         prop: 'parens-new-line',
         return: 'parens-new-line',
       }],
-      'react/no-unknown-property': [2, {
-        ignore: ['class'],
+      'style/jsx-indent': [2, 2],
+      'style/jsx-one-expression-per-line': [2, {
+        allow: 'literal',
       }],
-      'react/prop-types': 0,
     },
-  },
-  vue: false,
-  jsx: true,
-}, {
-  rules: {
-    'no-console': 0,
   },
 })

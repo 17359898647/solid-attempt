@@ -9,6 +9,7 @@ interface CalendarProps {
 
 export function InternalCalendar(propsValue: CalendarProps) {
   const props = mergeProps({ value: new Date() }, propsValue)
+  // eslint-disable-next-line solid/reactivity
   const [date, setDate] = createSignal(props.value)
 
   const handlePrevMonth = () => {
