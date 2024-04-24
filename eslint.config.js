@@ -1,14 +1,14 @@
 import eslint from '@antfu/eslint-config'
 
 export default eslint({
-  unocss: true,
-  jsx: true,
-  isInEditor: true,
-  solid: true,
   ignores: [
     'node_modules',
     'src/types/*',
   ],
+  unocss: true,
+  jsx: true,
+  isInEditor: true,
+  solid: true,
   stylistic: {
     overrides: {
       'style/jsx-sort-props': [2, {
