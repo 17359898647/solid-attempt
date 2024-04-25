@@ -39,6 +39,7 @@ export default eslint({
       'style/jsx-one-expression-per-line': [2, {
         allow: 'literal',
       }],
+      'no-console': 0,
     },
   },
 })
