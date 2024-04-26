@@ -193,4 +193,27 @@ export default defineConfig({
     },
   },
   transformers: [transformerDirectives(), transformerVariantGroup()],
+  rules: [
+    ['filter-white', {
+      filter: 'invert(97%) sepia(0%) saturate(0%) hue-rotate(66deg) brightness(103%) contrast(103%)',
+    }],
+    ['filter-pink-100', {
+      filter: 'invert(93%) sepia(31%) saturate(789%) hue-rotate(293deg) brightness(110%) contrast(96%)',
+    }],
+    ['filter-pink-200', {
+      filter: 'invert(95%) sepia(10%) saturate(1414%) hue-rotate(302deg) brightness(100%) contrast(95%)',
+    }],
+    ['filter-pink-300', {
+      filter: 'invert(91%) sepia(75%) saturate(6884%) hue-rotate(296deg) brightness(100%) contrast(89%)',
+    }],
+    ['filter-purple-100', {
+      filter: 'invert(99%) sepia(25%) saturate(6601%) hue-rotate(185deg) brightness(109%) contrast(97%)',
+    }],
+    ['filter-purple-300', {
+      filter: 'invert(81%) sepia(28%) saturate(7386%) hue-rotate(216deg) brightness(94%) contrast(94%)',
+    }],
+    ['filter-primary-900', {
+      filter: 'invert(8%) sepia(11%) saturate(2657%) hue-rotate(167deg) brightness(96%) contrast(92%)',
+    }],
+  ],
 })
