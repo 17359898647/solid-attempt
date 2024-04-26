@@ -4,7 +4,7 @@ import { InternalCalendar } from '@/component/DatePick'
 function App() {
   const [date, setDate] = createSignal(new Date())
   return (
-    <div class="flex-center size-full">
+    <div class="size-full flex-center">
       <div
         class="flex gap-4"
       >

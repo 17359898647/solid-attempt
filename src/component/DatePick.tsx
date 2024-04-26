@@ -114,7 +114,7 @@ export function InternalCalendar(propsValue: CalendarProps) {
         </div>
         <button onClick={handleNextMonth}>&gt;</button>
       </div>
-      <div class="days">
+      <div class="flex flex-wrap">
         <div class="day">日</div>
         <div class="day">一</div>
         <div class="day">二</div>

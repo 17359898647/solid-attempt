@@ -15,7 +15,6 @@
     "@types/lodash-es": "^4.17.12",
     "@unocss/eslint-plugin": "^0.59.4",
     "@unocss/reset": "^0.59.4",
-    "daisyui": "^4.10.2",
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
@@ -23,7 +22,6 @@
     "solid-js": "^1.8.17",
     "taze": "^0.13.6",
     "unocss": "^0.59.4",
-    "unocss-preset-daisy": "^7.0.0",
     "unocss-preset-extra": "^0.5.3",
     "vitest": "^1.5.0"
   },
