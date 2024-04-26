@@ -1,6 +1,8 @@
+import { cn } from '@/common/utils'
+
 function App() {
   return (
-    <div class="flex-center size-full">
+    <div class={cn('flex-center bg-red size-full', 'bg-primary')}>
       <div
         class="flex items-center gap-4"
       >
