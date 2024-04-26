@@ -11,9 +11,9 @@ dependencies:
   '@eslint-react/eslint-plugin':
     specifier: ^1.5.9
     version: 1.5.9(@typescript-eslint/parser@7.7.1)(eslint@8.57.0)(typescript@5.4.5)
-  '@iconify/json':
-    specifier: ^2.2.204
-    version: 2.2.204
+  '@julr/unocss-preset-forms':
+    specifier: ^0.1.0
+    version: 0.1.0(unocss@0.59.4)
   '@types/lodash-es':
     specifier: ^4.17.12
     version: 4.17.12
@@ -44,6 +44,9 @@ dependencies:
   unocss:
     specifier: ^0.59.4
     version: 0.59.4(postcss@8.4.38)(vite@5.2.10)
+  unocss-preset-animations:
+    specifier: ^1.0.2
+    version: 1.0.2(@unocss/preset-wind@0.59.4)(unocss@0.59.4)
   unocss-preset-extra:
     specifier: ^0.5.3
     version: 0.5.3(unocss@0.59.4)
@@ -1019,13 +1022,6 @@ packages:
   /@humanwhocodes/object-schema@2.0.3:
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
 
-  /@iconify/json@2.2.204:
-    resolution: {integrity: sha512-sFlh+TIF54DZoEzsF5YVWY7XEzjN2ZSmCjtzvajk5EdNjvPAKr9Tvvptoyj6hcuylJsDxiU12FRDSdygW1c8bg==}
-    dependencies:
-      '@iconify/types': 2.0.0
-      pathe: 1.1.2
-    dev: false
-
   /@iconify/types@2.0.0:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
     dev: false
@@ -1095,6 +1091,15 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
+    dev: false
+
+  /@julr/unocss-preset-forms@0.1.0(unocss@0.59.4):
+    resolution: {integrity: sha512-aQexTEjJY2r8hI4tDfgMB8ztQOnzCcovdra4CbbJ9c0QkvWibFR0yvEdvtWYFfg4kPYKQ+LbeowARCi5biQn+g==}
+    engines: {node: '>=16'}
+    peerDependencies:
+      unocss: '>= 0.31.13 < 1'
+    dependencies:
+      unocss: 0.59.4(postcss@8.4.38)(vite@5.2.10)
     dev: false
 
   /@nodelib/fs.scandir@2.1.5:
@@ -4399,6 +4404,16 @@ packages:
     resolution: {integrity: sha512-3faScn5I+hy9VleOq/qNbAd6pAx7iH5jYBMS9I1HgQVijz/4mv5Bvw5iw1sC/90CODiKo81G/ps8AJrISn687g==}
     dependencies:
       '@types/unist': 2.0.10
+    dev: false
+
+  /unocss-preset-animations@1.0.2(@unocss/preset-wind@0.59.4)(unocss@0.59.4):
+    resolution: {integrity: sha512-AacFdOvHwvKZKqjn9/paKQ50LmU0qk4n6350/toQcSX3XEQIE7rTZwm/68Aag5jP2Z8M4Y8IvDf8Q7Qc0MNdTw==}
+    peerDependencies:
+      '@unocss/preset-wind': '>= 0.56.0 < 1'
+      unocss: '>= 0.56.0 < 1'
+    dependencies:
+      '@unocss/preset-wind': 0.59.4
+      unocss: 0.59.4(postcss@8.4.38)(vite@5.2.10)
     dev: false
 
   /unocss-preset-extra@0.5.3(unocss@0.59.4):

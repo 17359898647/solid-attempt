@@ -8,6 +8,8 @@ import {
   transformerVariantGroup,
 } from 'unocss'
 import { presetExtra } from 'unocss-preset-extra'
+import presetAnimations from 'unocss-preset-animations'
+import { presetForms } from '@julr/unocss-preset-forms'
 
 export default defineConfig({
   presets: [
@@ -28,6 +30,10 @@ export default defineConfig({
         sans: 'DM Sans',
         serif: 'DM Serif Display',
       },
+    }),
+    presetAnimations(),
+    presetForms({
+      strategy: 'base',
     }),
   ],
   shortcuts: {
