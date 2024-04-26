@@ -19,6 +19,7 @@ export default defineConfig({
       },
       prefix: 'icon-',
       warn: true,
+      autoInstall: true,
     }),
     presetExtra(),
     presetWebFonts({

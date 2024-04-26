@@ -1,17 +1,11 @@
-import { createSignal } from 'solid-js'
-import { InternalCalendar } from '@/component/DatePick'
-
 function App() {
-  const [date, setDate] = createSignal(new Date())
   return (
-    <div class="size-full flex-center">
+    <div class="flex-center size-full">
       <div
-        class="flex gap-4"
+        class="flex items-center gap-4"
       >
-        <InternalCalendar
-          value={date()}
-          onChange={setDate}
-        />
+        <i class="icon-devicon:vuestorefront" />
+        <div class="icon-arcticons:vuetube" />
       </div>
     </div>
   )
