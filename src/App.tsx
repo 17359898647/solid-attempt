@@ -1,15 +1,13 @@
 import { cn } from '@/common/utils'
+import { PlaceholderInput } from '@/component/PlaceholderInput'
 
 function App() {
   return (
-    <div class={cn('flex-center bg-red size-full', 'bg-primary')}>
-      <div
-        class="flex items-center gap-4"
-      >
-        <i class="icon-devicon:vuestorefront" />
-        <div class="icon-arcticons:vuetube" />
-      </div>
-    </div>
+    <form
+      class={cn('flex-center bg-red size-full flex-col', 'bg-primary')}
+    >
+      <PlaceholderInput placeholder="123456789" />
+    </form>
   )
 }
 
